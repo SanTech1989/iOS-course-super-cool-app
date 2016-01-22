@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SuperCool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="11239-NN9XC2" translatesAutoresizingMaskIntoConstraints="NO" id="TQV-3p-Xxr" userLabel="bg">
+                                <rect key="frame" x="-351" y="-102" width="746" height="901"/>
+                                <animations/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Boom-App" translatesAutoresizingMaskIntoConstraints="NO" id="Uqj-tT-C1E">
+                                <rect key="frame" x="21" y="36" width="333" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osh-1H-NOp">
+                                <rect key="frame" x="111" y="334" width="153" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Make me super cool"/>
+                                <connections>
+                                    <action selector="makeMeNotSoUncool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PAZ-19-ELx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="CoolBg" destination="TQV-3p-Xxr" id="OO4-fs-024"/>
+                        <outlet property="CoolLogo" destination="Uqj-tT-C1E" id="VvN-xl-ueB"/>
+                        <outlet property="coolBg" destination="TQV-3p-Xxr" id="20C-D5-hi7"/>
+                        <outlet property="coolLogo" destination="Uqj-tT-C1E" id="JF6-4w-ysi"/>
+                        <outlet property="uncoolButton" destination="osh-1H-NOp" id="Iga-JT-1I7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308.5" y="450.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="11239-NN9XC2" width="1667" height="1667"/>
+        <image name="Boom-App" width="709" height="115"/>
+    </resources>
+</document>
